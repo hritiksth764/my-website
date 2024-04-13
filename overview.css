@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+.logo{
+    width: 173px;
+    height: 82px;
+  }
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Make the header fixed to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    padding: 0 20px; /* Adjust the horizontal padding as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    background-color: #FFF; /* Optional: Background color for the header */
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+.main-content {
+    padding-top: 80px; /* Adjust the padding to accommodate fixed header */
+}
+
+.overview-section h1, 
+.read-more h1,
+.vision-mission-section .vision h2, 
+.vision-mission-section .mission h2 {
+    font-size: 24px;
+    color: black;
+    margin-left: 60px;
+    /* Additional styles if needed */
+}
+
+.flex-container {
+    display: flex;
+    gap: 60px;
+     /* This will create the side-by-side layout */
+}
+
+.flex-container > p,
+.vision-mission-section .vision > p, 
+.vision-mission-section .mission > p { /* Allows the paragraph to fill the available space */
+     /* Adds some space between the columns */
+    width: 450px;
+    height: 210px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    margin-left: 60px;
+    font-weight: lighter;
+    /* Additional styles if needed */
+}
+
+/* Last paragraph of a section shouldn't have a margin on the right */
+.flex-container > p:last-child {
+    margin-right: 0;
+}
+
+.overlay {
+    transform: translateX(100%); /* Start off screen */
+    width: 50%; /* Or whatever width you desire */
+    height: 100%; /* Full height */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1; /* Make sure it's above other content */
+    background: #282828; /* Background color */
+    transition: transform 0.5s ease; /* Smooth transition for opening/closing */
+    /* Other styles... */
+  }
+  
+  /* Style for the menu items in the overlay */
+  .overlay-content {
+    padding-top: 200px; /* Space from the top of the overlay to the first menu item */
+    padding-left: 0; /* Reset any padding if previously set */
+    padding-right: 0; /* Reset any padding if previously set */
+    padding-bottom: 0; /* Reset any padding if previously set */
+    margin-left: 107px; /* Space from the left edge of the overlay to the text */
+    color: #F5B338; /* Yellow text color */
+    position: fixed;
+    top: 50px; /* Push content down below header */
+    width: 100%;
+    /* Full width of the overlay */
+    /* Add other styles for padding, etc. */
+  }
+  
+  .overlay-content a {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFF; /* Make sure the color is white */
+    text-transform: uppercase;
+    padding: 0; /* Reset any padding if previously set */
+    /* Remove bottom margin if previously set */
+    display: block; /* Each link will be on its own line */
+    white-space: nowrap;
+    text-decoration: none; /* Prevent text from wrapping */
+  }
+  .overlay-content a span.menu-number {
+    margin-right: 20px; /* Increase the right margin to create a gap */
+    display: inline-block; /* Treat the span as a block-level element inline */
+  }
+  
+  /* Style for the line separators */
+  .overlay-content a:not(:last-child):after {
+    content: '';
+    display: block;
+    margin-top: 20px; /* Space above the line */
+    margin-bottom: 30px; /* Space below the line */
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
+    /* margin-left: -307px; Align the line with the left edge of the text */
+    width: 600px; /* Line width extends full width of overlay content */
+  }
+  .read-more {
+    display: none;
+  }
+
+/* Additional styles for VISION & MISSION and LEADERSHIP sections */
+/* ... */
+
+/* Add responsive CSS as needed */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Reset right margin for mobile */
+    .flex-container > p {
+        margin-right: 0;
+    }
+}

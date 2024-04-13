@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overview</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="overview.css">
+</head>
+<body>
+<header class="site-header">
+  <img src="image.png" alt="Company Logo" class="logo">
+  <div class="hamburger-icon" onclick="toggleNav()">☰</div>
+</header>
+<div id="myNav" class="overlay">
+  <div class="overlay-content">
+    <a href="overview.html"><span class="menu-number">01</span> Overview</a>
+    <a href="#"><span class="menu-number">02</span> What did we do this year</a>
+    <a href="#"><span class="menu-number">03</span> Equipping girls with digital<br />and 21st century skills</a>
+    <a href="#"><span class="menu-number">04</span> Promoting foundational literacy and sel <br />among young learners</a>
+    <a href="#"><span class="menu-number">05</span> Empowering youth in rural India<br />with job readiness skills</a>
+    <a href="#"><span class="menu-number">06</span> Meet our team</a>
+  </div>
+</div>
+
+<main class="main-content">
+  <section class="overview-section">
+    <h1>OVERVIEW</h1>
+    <div class="flex-container">
+      <p>
+        IndiVillage Foundation is a nonprofit organization focused on closing the learning and skill gap in rural India. We enable youth (current generation) and children (future generation) to participate in sustainable livelihood opportunities by empowering them with 21st-century skills. While doing all this, we also apply a gender lens to our initiatives and seek to eliminate the gender disparities.
+      </p>
+      <p>
+        We operate within a comprehensive three-program framework, with a strong emphasis on education and skill development. Our education vertical comprises two programs: Storytelling Saturday and Tech Her Forward. These initiatives are complemented by our skilling vertical program, Rural Youth Skilling.
+      </p>
+    </div>
+  </section>
+
+  <section class="vision-mission-section">
+    <div class="flex-container">
+      <div class="vision">
+        <h2>VISION</h2>
+        <p>A Future In Rural India Where Skill Gaps Are Overcome</p>
+      </div>
+      <div class="mission">
+        <h2>MISSION</h2>
+        <p>We Prepare Young People And Children For Meaningful Careers...</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="vision-mission-section">
+    <div class="flex-container">
+      <div class="vision">
+        <h2>MESSAGE FROM THE LEADERSHIP</h2>
+        <p>A Future In Rural India Where Skill Gaps Are Overcome</p>
+      </div>
+      <div class="mission">
+        <h2>DIRECTOR</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+          <a href="#" id="read-more-link">Read More</a>
+        </p>
+      </div>
+      <div class="mission">
+        <h2>HEAD OF OPERATIONS</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="read-more" id="read-more-section">
+    <h1>MESSAGE FROM DIRECTOR</h1>
+    <div class="flex-container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <br />
+        <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </section>
+</main>
+
+<script>
+  function toggleNav() {
+    var overlay = document.getElementById("myNav");
+    if (overlay.style.transform === "translateX(0%)") {
+      overlay.style.transform = "translateX(100%)";
+    } else {
+      overlay.style.transform = "translateX(0%)";
+    }
+  }
+
+  var readMoreLink = document.getElementById("read-more-link");
+  readMoreLink.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var readMoreSection = document.getElementById("read-more-section");
+    readMoreSection.style.display = "block";
+    readMoreSection.scrollIntoView({ behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>

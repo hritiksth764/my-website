@@ -1,0 +1,634 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+  font-family: "Exo 2", sans-serif; /* Apply font family globally if preferred */
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center; /* Make the header fixed to the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  padding: 0 17px; /* Adjust the horizontal padding as needed */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  background-color: transparent; /* Optional: Background color for the header */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.main-content {
+  padding-top: 80px; /* Add padding to account for the fixed header height */
+}
+
+.main-container {
+  position: fixed;
+}
+
+.title-section .image {
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+}
+
+.logo {
+  width: 173px;
+  height: 82px;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+.title-section {
+  height: 100vh;
+  color: #f5b338;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 50px; /* Margin from left */
+  padding-top: 10px; /* Adjust if necessary */
+}
+
+.second-title {
+  color: #f5b338;
+
+  font-family: "Exo 2";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 50px;
+  padding-bottom: 60px;
+}
+
+.title-section .title,
+.title-section .second-title {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.logo {
+  cursor: pointer;
+}
+
+.overview-section,
+.vision-mission-section {
+  background-color: #1c4235;
+
+  /* Additional styles if needed */
+}
+
+.overview-section {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%-50px;
+  height: 100vh;
+  /* Adjust based on your header height */
+}
+
+.overview-section h1 {
+  width: 100%-20px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.two-column {
+  display: flex;
+  width: 100%;
+}
+
+.three-column {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  width: calc(33.333% - 40px); /* For three columns with padding */
+  margin: 0 20px; /* Space on the sides of each column */
+}
+
+.column p {
+  width: 450px;
+  height: 210px;
+  line-height: 1.6;
+  color: black;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* This ensures the last paragraph does not have a margin-bottom */
+.column p:last-child {
+  margin-bottom: 0;
+}
+
+.title-section .three-column .column a {
+  color: white;
+}
+
+.line-separator {
+  width: 100%-20px;
+  margin-left: 20px;
+  height: 0px;
+  border-top: 1px solid #000;
+}
+a {
+  color: white;
+  margin-top: -40px;
+}
+
+/* Last paragraph of a section shouldn't have a margin on the right */
+.flex-container > p:last-child {
+  margin-right: 0;
+}
+
+/* Overlay style */
+.overlay {
+  transform: translateX(100%); /* Start off screen */
+  width: 50%; /* Or whatever width you desire */
+  height: 100%; /* Full height */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1; /* Make sure it's above other content */
+  background: #282828; /* Background color */
+  transition: transform 0.5s ease; /* Smooth transition for opening/closing */
+  /* Other styles... */
+}
+
+/* Style for the menu items in the overlay */
+.overlay-content {
+  padding-top: 200px; /* Space from the top of the overlay to the first menu item */
+  padding-left: 0; /* Reset any padding if previously set */
+  padding-right: 0; /* Reset any padding if previously set */
+  padding-bottom: 0; /* Reset any padding if previously set */
+  margin-left: 107px; /* Space from the left edge of the overlay to the text */
+  color: #F5B338; /* Yellow text color */
+  position: fixed;
+  top: 50px; /* Push content down below header */
+  width: 100%;
+  /* Full width of the overlay */
+  /* Add other styles for padding, etc. */
+}
+
+.overlay-content a {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  color: #FFF; /* Make sure the color is white */
+  text-transform: uppercase;
+  padding: 0; /* Reset any padding if previously set */
+  /* Remove bottom margin if previously set */
+  display: block; /* Each link will be on its own line */
+  white-space: nowrap;
+  text-decoration: none; /* Prevent text from wrapping */
+}
+.overlay-content a span.menu-number {
+  margin-right: 20px; /* Increase the right margin to create a gap */
+  display: inline-block; /* Treat the span as a block-level element inline */
+}
+
+/* Style for the line separators */
+.overlay-content a:not(:last-child):after {
+  content: '';
+  display: block;
+  margin-top: 10px; /* Space above the line */
+  margin-bottom: 50px; /* Space below the line */
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
+  margin-left: 0px; 
+  width: 600px; /* Line width extends full width of overlay content */
+}
+.read-more {
+  display: none;
+}
+
+/* Additional styles for VISION & MISSION and LEADERSHIP sections */
+/* ... */
+
+/* Add responsive CSS as needed */
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;
+  }
+
+  /* Reset right margin for mobile */
+  .flex-container > p {
+      margin-right: 0;
+  }
+}
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+.impact-overview {
+  max-width: 1200px; /* Or whatever max-width you want */
+   /* This centers the section */
+  padding: 50px 15px; /* Add some padding */
+  text-align: left; /* Center the text */
+  font-family: "Exo 2", sans-serif;
+}
+
+
+.impact-overview h1 {
+  font-weight: 600; /* Or as needed */
+  margin-bottom: 50px;
+  padding-left:50px;/* Space between title and grid */
+}
+
+.impact-overview1 h1 {
+  font-weight: 600; /* Or as needed */
+  margin-bottom: 50px;
+  padding-left: 50px;/* Space between title and grid */
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create five columns */
+  grid-gap: 20px; /* Spacing between items */
+  margin-bottom: 50px;
+  padding-left: 50px;/* Space between grid and map, if you have one */
+}
+
+.stats-grid span {
+  font-weight: 400; /* Or as needed */
+  color: #333; /* Or whatever your color scheme is */
+  margin-bottom: 15px; /* Spacing between the numbers and description */
+}
+
+.stats-grid .number {
+  font-size: 60px; /* Or whatever size you want */
+  display: block;
+  color: #F5B338; /* Makes it easier to style and position separately from the description text */
+}
+.impact-overview .impact-image {
+  width: 100%; /* This makes the image responsive, i.e., it will scale with the width of its container */
+  max-width: 1200px; /* Optional: if you want to limit how large it can get; match with your grid's max-width if needed */
+  height: 100%; /* Maintain the aspect ratio of the image */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto; /* Center the image within its container */
+  padding-top: 100px;
+  padding-left: 40px; /* Optional: space between the grid and the image */
+}
+
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 50px;
+  height: 90vh;
+}
+
+
+
+
+
+.skills-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 50px;
+  height: 100vh;
+  background-color: #1c4235;
+}
+
+.skills-section3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 50px;
+  height: 93vh;
+  background-color: white;
+}
+.skills-section4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 50px;
+  height: 85vh;
+  background-color: #1c4235;
+}
+
+.skills-section5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 50px;
+  height: 100vh;
+  
+}
+.skills-section .content h2{
+  font-size: 32px;
+  padding-bottom: 30px;
+  width: 500px;
+  
+  
+}
+
+.skills-section2 .content2 h2{
+  font-size: 32px;
+  padding-bottom: 30px;
+  width: 500px;
+  padding-top: 40px;
+  
+}
+
+.skills-section3 .content2 h2{
+  font-size: 32px;
+  padding-bottom: 30px;
+  width: 500px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  
+}
+
+.skills-section4 .content2 h2{
+  font-size: 32px;
+  padding-bottom: 30px;
+  width: 500px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  
+}
+.skills-section5 .content2 h2{
+  font-size: 32px;
+  padding-bottom: 30px;
+  width: 500px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  
+}
+
+
+.content {
+  max-width: 40%;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+
+
+
+.skills-section5 .content {
+  max-width: 0%;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+
+.impact-stats .number {
+  font-size: 40px; /* or any size you prefer */
+  font-weight: bold;
+  color: #F5B338 /* if you want the numbers to be bold */
+}
+
+
+.program-overview h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  /* font-size: 40px; */
+}
+
+.program-overview p {
+  color: rgba(40, 40, 40, 0.65);
+  font-size: 17px;
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 33px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+
+}
+
+
+.program-overview2 p {
+  font-size: 17px;
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 33px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: capitalize;
+
+}
+
+.program-overview a {
+  color: #000;
+  font-weight: normal;
+}
+
+.program-overview2 a {
+  color: #000;
+  font-weight: normal;
+}
+
+.image-container {
+  max-width: 60%;
+  margin-top: 200px;
+}
+
+.skills-section3 .image-container {
+  max-width: 60%;
+  margin-top: 67px;
+}
+
+.skills-section4 .image-container {
+  max-width: 60%;
+  margin-top: 200px;
+}
+
+.skills-section5 .image-container {
+  max-width: 60%;
+  margin-top: 255px;
+}
+
+.image-container img {
+  
+  width: 100%;
+  height: auto;
+  width:800px;
+  object-fit: contain;
+  display: block; /* Removes bottom space under the image */
+}
+
+.partners-section {
+  height: 90vh; /* Full window height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: left; /* Horizontally centers the content */
+  text-align: left;
+  padding-left: 40px;
+  /* padding: 20px; */
+  background-color: #1c4235; /* Padding might be needed depending on your design */
+}
+.partners-section2 {
+  height: 100vh; /* Full window height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: left; /* Horizontally centers the content */
+  text-align: left;
+  padding-left: 40px;
+  /* padding: 20px; */
+  background-color: white; /* Padding might be needed depending on your design */
+}
+
+.partners-section h2 {
+  margin-top: 60px; /* Spacing between the title and the image */
+  font-size: 42px; /* Adjust the font size as needed */
+  text-transform: uppercase;
+  color: white; /* Makes the text uppercase */
+  /* Add other styling such as font-weight, color, etc., as needed */
+}
+.partners-section2 h2 {
+  padding-top: 120px;
+   /* Spacing between the title and the image */
+  font-size: 42px; /* Adjust the font size as needed */
+  text-transform: uppercase;
+  color: black; /* Makes the text uppercase */
+  /* Add other styling such as font-weight, color, etc., as needed */
+}
+
+.partners-section .image-container img {
+  margin-top: -180px;
+  width: 1400px;
+  height: 100%;
+  margin: center /* Limits image size, adjust as needed */
+   /* Maintains aspect ratio */
+}
+
+.partners-section2 .image-container img {
+  /* margin-top: -250px */
+  padding-left: 60px;
+  margin-top: -180px;
+  width: 1400px;
+  height: 100%;
+  margin: center /* Limits image size, adjust as needed */
+   /* Maintains aspect ratio */
+}
+
+
+/* Styles specific to the main-section */
+/* Styles for the main-section */
+.main-section {
+  background-color: #1c4235;
+  color: white;
+  padding: 20px;
+  height: 70vh;
+}
+
+/* Styles for the content within main-section */
+.main-section .content {
+  padding-left: 40px;
+}
+
+/* Styles for the headings within main-section */
+.main-section .heading {
+  padding-left: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Styles for the text within main-section */
+.main-section .text {
+  
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  color: rgba(255, 255, 255, 0.65);
+
+
+}
+
+/* Styles for the row within main-section */
+.main-section .row {
+  display: flex;
+}
+
+/* Styles for the columns within main-section */
+.main-section .column {
+  flex: 1;
+  padding-left: 60px; /* Match the padding of headings and text */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Align items vertically */
+}
+
+/* Styles for the sub-heading within main-section */
+.main-section .sub-heading {
+  margin-bottom: 10px;
+}
+
+/* Styles for the sub-text within main-section */
+.main-section .sub-text {
+  margin-bottom: 0; 
+  color: rgba(255, 255, 255, 0.65);
+
+/* Remove default margin */
+}
+
+/* Styles for the missing heading */
+.main-section .missing-heading {
+  height: 20px; /* Adjust height to match the height of other headings */
+}
+
+
+
+
+
+/* Responsive styling, if needed */
+@media (max-width: 768px) {
+  .skills-section {
+      flex-direction: column;
+  }
+
+  .content, .image-container {
+      max-width: 100%;
+  }
+}
+
+
+/* Add responsive behavior */
+@media (max-width: 768px) {
+  .stats-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+}
+
+/* Continue with the rest of your CSS */
