@@ -84,6 +84,7 @@ html {
 .overview-section,
 .vision-mission-section {
   background-color: #1c4235;
+  color: white;
 
   /* Additional styles if needed */
 }
@@ -102,7 +103,8 @@ html {
   width: 100%-20px;
   text-align: left;
   margin-bottom: 20px;
-  margin-left: 20px; /* Adjust as needed */
+  margin-left: 20px;
+  color: white; /* Adjust as needed */
 }
 
 .two-column {
@@ -125,7 +127,7 @@ html {
   width: 450px;
   height: 210px;
   line-height: 1.6;
-  color: black;
+  color: rgba(255, 255, 255, 0.65);
   font-family: "Exo 2", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -310,6 +312,12 @@ a {
   padding-left: 50px;
   height: 100vh;
   background-color: #1c4235;
+  height: 90vh;
+  
+}
+
+.skills-section2 .program-overview2 a{
+  color: white;
 }
 
 .skills-section3 {
@@ -329,6 +337,18 @@ a {
   padding-left: 50px;
   height: 85vh;
   background-color: #1c4235;
+}
+
+.skills-section4 .impact-stats {
+  color: white;
+}
+
+.skills-section4 .content2 h3{
+  color: white;
+}
+
+.skills-section4 .program-overview2 a{
+  color: white;
 }
 
 .skills-section5 {
@@ -353,6 +373,12 @@ a {
   padding-bottom: 30px;
   width: 500px;
   padding-top: 40px;
+  color: white;
+  
+}
+
+.skills-section2 .content2 h3{
+  color: white;
   
 }
 
@@ -371,6 +397,7 @@ a {
   width: 500px;
   padding-top: 40px;
   text-transform: uppercase;
+  color: white;
   
 }
 .skills-section5 .content2 h2{
@@ -389,9 +416,6 @@ a {
   margin-bottom: 0px;
 }
 
-
-
-
 .skills-section5 .content {
   max-width: 0%;
   margin-top: 100px;
@@ -403,8 +427,12 @@ a {
   gap: 20px;
   text-align: left;
   margin-bottom: 30px;
+  /* color: white; */
 }
 
+.skills-section2 .impact-stats{
+  color: white;
+}
 
 .impact-stats .number {
   font-size: 40px; /* or any size you prefer */
