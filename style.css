@@ -180,7 +180,7 @@ a {
   padding-right: 0; /* Reset any padding if previously set */
   padding-bottom: 0; /* Reset any padding if previously set */
   margin-left: 107px; /* Space from the left edge of the overlay to the text */
-  color: #F5B338; /* Yellow text color */
+  color: #f5b338; /* Yellow text color */
   position: fixed;
   top: 50px; /* Push content down below header */
   width: 100%;
@@ -189,11 +189,11 @@ a {
 }
 
 .overlay-content a {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  color: #FFF; /* Make sure the color is white */
+  color: #fff; /* Make sure the color is white */
   text-transform: uppercase;
   padding: 0; /* Reset any padding if previously set */
   /* Remove bottom margin if previously set */
@@ -208,17 +208,14 @@ a {
 
 /* Style for the line separators */
 .overlay-content a:not(:last-child):after {
-  content: '';
+  content: "";
   display: block;
   margin-top: 10px; /* Space above the line */
   margin-bottom: 50px; /* Space below the line */
   height: 0.5px;
   background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
-  margin-left: 0px; 
+  margin-left: 0px;
   width: 600px; /* Line width extends full width of overlay content */
-}
-.read-more {
-  display: none;
 }
 
 /* Additional styles for VISION & MISSION and LEADERSHIP sections */
@@ -227,12 +224,12 @@ a {
 /* Add responsive CSS as needed */
 @media (max-width: 768px) {
   .flex-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   /* Reset right margin for mobile */
   .flex-container > p {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -241,24 +238,19 @@ a {
 }
 
 .impact-overview {
-  max-width: 1200px; /* Or whatever max-width you want */
-   /* This centers the section */
+  max-width: 100vw; /* Or whatever max-width you want */
+  /* This centers the section */
   padding: 50px 15px; /* Add some padding */
   text-align: left; /* Center the text */
   font-family: "Exo 2", sans-serif;
 }
 
-
 .impact-overview h1 {
   font-weight: 600; /* Or as needed */
   margin-bottom: 50px;
-  padding-left:50px;/* Space between title and grid */
-}
-
-.impact-overview1 h1 {
-  font-weight: 600; /* Or as needed */
-  margin-bottom: 50px;
-  padding-left: 50px;/* Space between title and grid */
+  padding-left: 50px;
+  font-size: 38px;
+  background-color: transparent; /* Space between title and grid */
 }
 
 .stats-grid {
@@ -266,7 +258,7 @@ a {
   grid-template-columns: repeat(5, 1fr); /* Create five columns */
   grid-gap: 20px; /* Spacing between items */
   margin-bottom: 50px;
-  padding-left: 50px;/* Space between grid and map, if you have one */
+  padding-left: 50px; /* Space between grid and map, if you have one */
 }
 
 .stats-grid span {
@@ -278,18 +270,124 @@ a {
 .stats-grid .number {
   font-size: 60px; /* Or whatever size you want */
   display: block;
-  color: #F5B338; /* Makes it easier to style and position separately from the description text */
-}
-.impact-overview .impact-image {
-  width: 100%; /* This makes the image responsive, i.e., it will scale with the width of its container */
-  max-width: 1200px; /* Optional: if you want to limit how large it can get; match with your grid's max-width if needed */
-  height: 100%; /* Maintain the aspect ratio of the image */
-  display: block; /* Removes any inline behavior */
-  margin: 0 auto; /* Center the image within its container */
-  padding-top: 100px;
-  padding-left: 40px; /* Optional: space between the grid and the image */
+  color: #f5b338; /* Makes it easier to style and position separately from the description text */
 }
 
+.impact-overview {
+  max-width: 100vw; /* Ensure the container is as wide as the viewport */
+  padding: 50px 15px; /* Keep your existing padding */
+  text-align: left; /* Keep text aligned to the left */
+  font-family: "Exo 2", sans-serif;
+  background: white; /* Set the background color for the entire section */
+}
+
+.impact-overview .impact-image {
+  max-width: 100%; /* Make image width responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block-level for image */
+  margin: 0 auto; /* Center the image */
+  padding: 50px; /* Uniform padding */
+  box-sizing: border-box;
+  background-color: #fff; /* Include padding in the width and height */
+}
+
+.impact-overview .impact-image2 {
+  max-width: 100%; /* Make image width responsive */
+  height: auto; /* Maintain aspect ratio */
+  min-height: 500px; /* Set a minimum height if needed */
+  display: block; /* Block-level for image */
+  padding: 70px 50px; /* Padding inside the element */
+  box-sizing: border-box; /* Include padding in the width and height */
+  background: #1c4235; /* Maintain background color if needed */
+}
+
+.impact-overview {
+  max-width: 100vw;
+  padding: 50px 15px;
+  text-align: left;
+  font-family: "Exo 2", sans-serif;
+}
+
+.impact-overview section2 h1 {
+  color: white;
+}
+
+.section1 {
+  /* No specific background color for section1, assumes white or other default */
+}
+
+.section2 {
+  background: #1c4235;
+  /* Green background for section2 */
+}
+.section2 h1 {
+  color: #fff;
+  /* Green background for section2 */
+}
+
+.impact-overview .impact-image {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto; /* Center the image */
+  padding-top: 50px; /* Top padding */
+  padding-bottom: 50px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: transparent; /* Padding included in the element's dimensions */
+}
+
+.leadership {
+  padding: 20px;
+  height: 60vh;
+  display: start;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1c4235;
+}
+
+.leadership .containernew {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.leadership h1 {
+  text-align: left;
+  padding-left: 50px;
+  margin: 0;
+  color: white;
+}
+
+.leadership h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #fff;
+
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.leadership p {
+  text-align: justify;
+  width: 320px;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.leadership .read-more a {
+  text-align: left;
+  font-size: 14px;
+  text-decoration-color: #f5b338;
+}
 
 .skills-section {
   display: flex;
@@ -300,10 +398,6 @@ a {
   height: 90vh;
 }
 
-
-
-
-
 .skills-section2 {
   display: flex;
   align-items: center;
@@ -313,10 +407,9 @@ a {
   height: 100vh;
   background-color: #1c4235;
   height: 90vh;
-  
 }
 
-.skills-section2 .program-overview2 a{
+.skills-section2 .program-overview2 a {
   color: white;
 }
 
@@ -343,11 +436,11 @@ a {
   color: white;
 }
 
-.skills-section4 .content2 h3{
+.skills-section4 .content2 h3 {
   color: white;
 }
 
-.skills-section4 .program-overview2 a{
+.skills-section4 .program-overview2 a {
   color: white;
 }
 
@@ -358,57 +451,48 @@ a {
   align-items: start;
   padding-left: 50px;
   height: 100vh;
-  
 }
-.skills-section .content h2{
+.skills-section .content h2 {
   font-size: 32px;
   padding-bottom: 30px;
   width: 500px;
-  
-  
 }
 
-.skills-section2 .content2 h2{
+.skills-section2 .content2 h2 {
   font-size: 32px;
   padding-bottom: 30px;
   width: 500px;
   padding-top: 40px;
   color: white;
-  
 }
 
-.skills-section2 .content2 h3{
+.skills-section2 .content2 h3 {
   color: white;
-  
 }
 
-.skills-section3 .content2 h2{
+.skills-section3 .content2 h2 {
   font-size: 32px;
   padding-bottom: 30px;
   width: 500px;
   padding-top: 40px;
   text-transform: uppercase;
-  
 }
 
-.skills-section4 .content2 h2{
+.skills-section4 .content2 h2 {
   font-size: 32px;
   padding-bottom: 30px;
   width: 500px;
   padding-top: 40px;
   text-transform: uppercase;
   color: white;
-  
 }
-.skills-section5 .content2 h2{
+.skills-section5 .content2 h2 {
   font-size: 32px;
   padding-bottom: 30px;
   width: 500px;
   padding-top: 40px;
   text-transform: uppercase;
-  
 }
-
 
 .content {
   max-width: 40%;
@@ -430,16 +514,15 @@ a {
   /* color: white; */
 }
 
-.skills-section2 .impact-stats{
+.skills-section2 .impact-stats {
   color: white;
 }
 
 .impact-stats .number {
   font-size: 40px; /* or any size you prefer */
   font-weight: bold;
-  color: #F5B338 /* if you want the numbers to be bold */
+  color: #f5b338; /* if you want the numbers to be bold */
 }
-
 
 .program-overview h3 {
   margin-top: 20px;
@@ -458,9 +541,7 @@ a {
   font-style: normal;
   font-weight: 400;
   text-transform: capitalize;
-
 }
-
 
 .program-overview2 p {
   font-size: 17px;
@@ -472,7 +553,6 @@ a {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.65);
   text-transform: capitalize;
-
 }
 
 .program-overview a {
@@ -506,10 +586,9 @@ a {
 }
 
 .image-container img {
-  
   width: 100%;
   height: auto;
-  width:800px;
+  width: 800px;
   object-fit: contain;
   display: block; /* Removes bottom space under the image */
 }
@@ -546,7 +625,7 @@ a {
 }
 .partners-section2 h2 {
   padding-top: 120px;
-   /* Spacing between the title and the image */
+  /* Spacing between the title and the image */
   font-size: 42px; /* Adjust the font size as needed */
   text-transform: uppercase;
   color: black; /* Makes the text uppercase */
@@ -557,8 +636,8 @@ a {
   margin-top: -180px;
   width: 1400px;
   height: 100%;
-  margin: center /* Limits image size, adjust as needed */
-   /* Maintains aspect ratio */
+  margin: center; /* Limits image size, adjust as needed */
+  /* Maintains aspect ratio */
 }
 
 .partners-section2 .image-container img {
@@ -567,10 +646,9 @@ a {
   margin-top: -180px;
   width: 1400px;
   height: 100%;
-  margin: center /* Limits image size, adjust as needed */
-   /* Maintains aspect ratio */
+  margin: center; /* Limits image size, adjust as needed */
+  /* Maintains aspect ratio */
 }
-
 
 /* Styles specific to the main-section */
 /* Styles for the main-section */
@@ -595,13 +673,10 @@ a {
 
 /* Styles for the text within main-section */
 .main-section .text {
-  
   margin-bottom: 20px;
   padding: 20px;
   padding-left: 40px;
   color: rgba(255, 255, 255, 0.65);
-
-
 }
 
 /* Styles for the row within main-section */
@@ -625,10 +700,10 @@ a {
 
 /* Styles for the sub-text within main-section */
 .main-section .sub-text {
-  margin-bottom: 0; 
+  margin-bottom: 0;
   color: rgba(255, 255, 255, 0.65);
 
-/* Remove default margin */
+  /* Remove default margin */
 }
 
 /* Styles for the missing heading */
@@ -636,26 +711,22 @@ a {
   height: 20px; /* Adjust height to match the height of other headings */
 }
 
-
-
-
-
 /* Responsive styling, if needed */
 @media (max-width: 768px) {
   .skills-section {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .content, .image-container {
-      max-width: 100%;
+  .content,
+  .image-container {
+    max-width: 100%;
   }
 }
-
 
 /* Add responsive behavior */
 @media (max-width: 768px) {
   .stats-grid {
-      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
   }
 }
 
