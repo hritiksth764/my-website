@@ -22,7 +22,8 @@ html {
 }
 
 .main-content {
-  padding-top: 80px; /* Add padding to account for the fixed header height */
+  padding-top: 80px;
+  max-height: 90vh; /* Add padding to account for the fixed header height */
 }
 
 .main-container {
@@ -34,13 +35,16 @@ html {
   object-fit: contain;
   top: 0;
   right: 0;
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 800px;
+  padding-right: 40px;
 }
 
 .logo {
-  width: 173px;
-  height: 82px;
+  width: 92px;
+  height: 57px;
+  flex-shrink: 0;
+  padding: 20px;
 }
 
 .hamburger-icon {
@@ -237,17 +241,9 @@ a {
   cursor: pointer;
 }
 
-.impact-overview {
-  max-width: 100vw; /* Or whatever max-width you want */
-  /* This centers the section */
-  padding: 50px 15px; /* Add some padding */
-  text-align: left; /* Center the text */
-  font-family: "Exo 2", sans-serif;
-}
-
 .impact-overview h1 {
   font-weight: 600; /* Or as needed */
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding-left: 50px;
   font-size: 38px;
   background-color: transparent; /* Space between title and grid */
@@ -274,7 +270,8 @@ a {
 }
 
 .impact-overview {
-  max-width: 100vw; /* Ensure the container is as wide as the viewport */
+  max-width: 100vw;
+  height: 100vh; /* Ensure the container is as wide as the viewport */
   padding: 50px 15px; /* Keep your existing padding */
   text-align: left; /* Keep text aligned to the left */
   font-family: "Exo 2", sans-serif;
@@ -283,7 +280,7 @@ a {
 
 .impact-overview .impact-image {
   max-width: 100%; /* Make image width responsive */
-  height: auto; /* Maintain aspect ratio */
+  height: 100vh; /* Maintain aspect ratio */
   display: block; /* Block-level for image */
   margin: 0 auto; /* Center the image */
   padding: 50px; /* Uniform padding */
@@ -299,13 +296,6 @@ a {
   padding: 70px 50px; /* Padding inside the element */
   box-sizing: border-box; /* Include padding in the width and height */
   background: #1c4235; /* Maintain background color if needed */
-}
-
-.impact-overview {
-  max-width: 100vw;
-  padding: 50px 15px;
-  text-align: left;
-  font-family: "Exo 2", sans-serif;
 }
 
 .impact-overview section2 h1 {
@@ -331,14 +321,116 @@ a {
   display: block; /* Removes any inline behavior */
   margin: 0 auto; /* Center the image */
   padding-top: 50px; /* Top padding */
-  padding-bottom: 50px; /* Bottom padding */
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px; /* Bottom padding */
   box-sizing: border-box;
   background-color: transparent; /* Padding included in the element's dimensions */
 }
 
+.impact-overview .impact-imageArt {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto; /* Center the image */
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px; /* Top padding */
+  padding-bottom: 0px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: transparent; /* Padding included in the element's dimensions */
+}
+
+.impact-overview .impact-imageArt2 {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto; /* Center the image */
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px; /* Top padding */
+  padding-bottom: 0px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: transparent; /* Padding included in the element's dimensions */
+}
+
+.impact-overview .impact-imageArt3 {
+  width: 100vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto; /* Center the image */
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px; /* Top padding */
+  padding-bottom: 0px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: #1c4235; /* Padding included in the element's dimensions */
+}
+
+.impact-overview .impact-imageArt4 {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  /* Center the image */
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 50px; /* Top padding */
+  padding-bottom: 0px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: transparent; /* Padding included in the element's dimensions */
+}
+
+.impact-overview .impact-imageArt5 {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  /* Center the image */
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 50px; /* Top padding */
+  padding-bottom: 0px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: #1c4235; /* Padding included in the element's dimensions */
+}
+
+.impact-overviewNew {
+  max-width: 100vw;
+  height: 100vh; /* Ensure the container is as wide as the viewport */
+  /*  Keep your existing padding */
+  padding: 0 50px;
+  padding-top: 20px;
+  text-align: left; /* Keep text aligned to the left */
+  font-family: "Exo 2", sans-serif;
+  background: white; /* Set the background color for the entire section */
+}
+
+.impact-overviewNew .impact-imageArt6 {
+  width: 84vw; /* Responsive width */
+  height: 95vh; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto;
+  /* Center the image */
+  /* Bottom padding */
+  box-sizing: border-box;
+  /* Padding included in the element's dimensions */
+}
+
+.impact-overviewCopy {
+  max-height: 100vh;
+}
+.impact-overviewCopy .impact-image {
+  max-width: 100%; /* Make image width responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block-level for image */
+  margin: 0 auto; /* Center the image */
+  padding: 50px; /* Uniform padding */
+  box-sizing: border-box;
+  background-color: #1c4235; /* Include padding in the width and height */
+}
+
 .leadership {
   padding: 20px;
-  height: 60vh;
+  height: 100vh;
   display: start;
   flex-direction: column;
   justify-content: center;
@@ -389,212 +481,584 @@ a {
   text-decoration-color: #f5b338;
 }
 
-.skills-section {
+.skills-sectionfinal {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: start;
-  padding-left: 50px;
-  height: 90vh;
-}
-
-.skills-section2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: start;
-  padding-left: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 100vh;
-  background-color: #1c4235;
-  height: 90vh;
+  background-color: #1c4235; /* Set the height to 100% of the viewport height */
 }
 
-.skills-section2 .program-overview2 a {
-  color: white;
+.skills-sectionfinal .content {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 40px; /* Optional: Add some space between content and image */
 }
 
-.skills-section3 {
+.skills-sectionfinal .content h2 {
+  color: #fff;
+  width: 810px;
+  height: 134px;
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal .content h3 {
+  color: #fff;
+}
+.skills-sectionfinal .impact-stats {
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(3, 182px); /* Three columns with fixed width */
+  grid-template-rows: 94px; /* Set the height of the grid */
+  width: 546px; /* Set the width of the grid */
+  height: 94px; /* Set the height of the grid */
+}
+
+.skills-sectionfinal .impact-stats div {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: start;
-  padding-left: 50px;
-  height: 93vh;
-  background-color: white;
-}
-.skills-section4 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: start;
-  padding-left: 50px;
-  height: 85vh;
-  background-color: #1c4235;
-}
-
-.skills-section4 .impact-stats {
-  color: white;
-}
-
-.skills-section4 .content2 h3 {
-  color: white;
-}
-
-.skills-section4 .program-overview2 a {
-  color: white;
-}
-
-.skills-section5 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: start;
-  padding-left: 50px;
-  height: 100vh;
-}
-.skills-section .content h2 {
-  font-size: 32px;
-  padding-bottom: 30px;
-  width: 500px;
-}
-
-.skills-section2 .content2 h2 {
-  font-size: 32px;
-  padding-bottom: 30px;
-  width: 500px;
-  padding-top: 40px;
-  color: white;
-}
-
-.skills-section2 .content2 h3 {
-  color: white;
-}
-
-.skills-section3 .content2 h2 {
-  font-size: 32px;
-  padding-bottom: 30px;
-  width: 500px;
-  padding-top: 40px;
-  text-transform: uppercase;
-}
-
-.skills-section4 .content2 h2 {
-  font-size: 32px;
-  padding-bottom: 30px;
-  width: 500px;
-  padding-top: 40px;
-  text-transform: uppercase;
-  color: white;
-}
-.skills-section5 .content2 h2 {
-  font-size: 32px;
-  padding-bottom: 30px;
-  width: 500px;
-  padding-top: 40px;
-  text-transform: uppercase;
-}
-
-.content {
-  max-width: 40%;
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-
-.skills-section5 .content {
-  max-width: 0%;
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-.impact-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
   text-align: left;
-  margin-bottom: 30px;
-  /* color: white; */
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
 }
 
-.skills-section2 .impact-stats {
-  color: white;
+.skills-sectionfinal .impact-stats div span.number {
+  color: #f9a129; /* Set color of numbers */
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-.impact-stats .number {
-  font-size: 40px; /* or any size you prefer */
-  font-weight: bold;
-  color: #f5b338; /* if you want the numbers to be bold */
-}
-
-.program-overview h3 {
+.skills-sectionfinal .program-overview {
   margin-top: 20px;
-  margin-bottom: 20px;
-
-  /* font-size: 40px; */
+  color: white; /* Optional: Add some space between impact stats and program overview */
 }
 
-.program-overview p {
-  color: rgba(40, 40, 40, 0.65);
-  font-size: 17px;
-  margin-bottom: 50px;
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 33px;
+.skills-sectionfinal .program-overview p {
+  width: 593px;
+  height: 131px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+}
+
+.skills-sectionfinal .read-more {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Exo 2";
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
   text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
 }
 
-.program-overview2 p {
-  font-size: 17px;
-  margin-bottom: 50px;
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 33px;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.65);
-  text-transform: capitalize;
-}
-
-.program-overview a {
-  color: #000;
-  font-weight: normal;
-}
-
-.program-overview2 a {
-  color: #000;
-  font-weight: normal;
-}
-
-.image-container {
-  max-width: 60%;
-  margin-top: 200px;
-}
-
-.skills-section3 .image-container {
-  max-width: 60%;
-  margin-top: 67px;
-}
-
-.skills-section4 .image-container {
-  max-width: 60%;
-  margin-top: 200px;
-}
-
-.skills-section5 .image-container {
-  max-width: 60%;
-  margin-top: 255px;
-}
-
-.image-container img {
+.skills-sectionfinal .read-more::after {
+  content: "";
+  display: block;
   width: 100%;
-  height: auto;
-  width: 800px;
+  height: 1px;
+  background-color: #f9a129;
+  position: absolute;
+  bottom: -2px;
+}
+
+.skills-sectionfinal .image-container {
+  position: absolute;
+  left: 733px;
+  bottom: 0;
+  padding-right: 0;
+}
+
+.skills-sectionfinal .image-container img {
   object-fit: contain;
-  display: block; /* Removes bottom space under the image */
+  width: auto;
+  max-width: 100%;
+  height: 100%; /* Ensure the image fills the entire height of the container */
+}
+
+.skills-sectionfinal1 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: white; /* Set the height to 100% of the viewport height */
+}
+
+.skills-sectionfinal1 .content {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 40px; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal1 .content h2 {
+  color: black;
+  width: 948px;
+  height: 210px;
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal1 .content h3 {
+  color: rgba(40, 40, 40, 0.75);
+}
+
+.skills-sectionfinal1 .impact-stats {
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(3, 182px); /* Three columns with fixed width */
+  grid-template-rows: 94px; /* Set the height of the grid */
+  width: 546px; /* Set the width of the grid */
+  height: 94px; /* Set the height of the grid */
+}
+
+.skills-sectionfinal1 .impact-stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  color: rgba(40, 40, 40, 0.75);
+}
+
+.skills-sectionfinal1 .impact-stats div span.number {
+  color: #f9a129; /* Set color of numbers */
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.skills-sectionfinal1 .program-overview {
+  color: rgba(40, 40, 40, 0.75);
+  margin-top: 20px; /* Optional: Add some space between impact stats and program overview */
+}
+
+.skills-sectionfinal1 .program-overview p {
+  width: 705px;
+  height: 199px;
+  font-size: 20px;
+  color: rgba(40, 40, 40, 0.75);
+}
+
+.skills-sectionfinal1 .read-more {
+  color: rgba(40, 40, 40, 0.65);
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+}
+
+.skills-sectionfinal1 .read-more::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(40, 40, 40, 0.65);
+  position: absolute;
+  bottom: -2px;
+}
+
+.skills-sectionfinal1 .image-container {
+  position: absolute;
+  padding-left: 40px;
+  left: 474px;
+  top: 251px;
+  bottom: 0;
+  padding-right: 0;
+}
+
+.skills-sectionfinal1 .image-container img {
+  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: 100%; /* Ensure the image fills the entire height of the container */
+}
+
+.skills-sectionfinal2 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #1c4235; /* Set the height to 100% of the viewport height */
+}
+
+.skills-sectionfinal2 .content {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 40px; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal2 .content h2 {
+  color: white;
+  width: 890px;
+  height: 210px;
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal2 .content h3 {
+  color: white;
+  /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal2 .impact-stats {
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(3, 182px); /* Three columns with fixed width */
+  grid-template-rows: 94px; /* Set the height of the grid */
+  width: 546px; /* Set the width of the grid */
+  height: 94px; /* Set the height of the grid */
+}
+
+.skills-sectionfinal2 .impact-stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.skills-sectionfinal2 .impact-stats div span.number {
+  color: #f9a129; /* Set color of numbers */
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.skills-sectionfinal2 .program-overview {
+  margin-top: 20px; /* Optional: Add some space between impact stats and program overview */
+}
+
+.skills-sectionfinal2 .program-overview p {
+  width: 705px;
+  height: 199px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+}
+
+.skills-sectionfinal2 .read-more {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+}
+
+.skills-sectionfinal2 .read-more::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #f9a129;
+  position: absolute;
+  bottom: -2px;
+}
+
+.skills-sectionfinal2 .image-container {
+  position: absolute;
+  padding-left: 40px;
+  left: 898px;
+  /* top: 91px; */
+  bottom: 0;
+  padding-right: 0;
+}
+
+.skills-sectionfinal2 .image-container img {
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  height: 100%; /* Ensure the image fills the entire height of the container */
+}
+
+.skills-sectionfinal3 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: white; /* Set the height to 100% of the viewport height */
+}
+
+.skills-sectionfinal3 .content {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 40px; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal3 .content h2 {
+  color: black;
+  width: 929px;
+  height: 140px;
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal3 .content h3 {
+  color: rgba(40, 40, 40, 0.75);
+  /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal3 .impact-stats {
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(3, 182px); /* Three columns with fixed width */
+  grid-template-rows: 94px; /* Set the height of the grid */
+  width: 546px; /* Set the width of the grid */
+  height: 94px; /* Set the height of the grid */
+}
+
+.skills-sectionfinal3 .impact-stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  color: rgba(40, 40, 40, 0.75);
+}
+
+.skills-sectionfinal3 .impact-stats div span.number {
+  color: #f9a129; /* Set color of numbers */
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.skills-sectionfinal3 .program-overview {
+  margin-top: 20px; /* Optional: Add some space between impact stats and program overview */
+}
+
+.skills-sectionfinal3 .program-overview p {
+  width: 705px;
+  height: 199px;
+  font-size: 20px;
+  color: rgba(40, 40, 40, 0.75);
+}
+
+.skills-sectionfinal3 .read-more {
+  color: rgba(40, 40, 40, 0.65);
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+}
+
+.skills-sectionfinal3 .read-more::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(40, 40, 40, 0.65);
+  position: absolute;
+  bottom: -2px;
+}
+
+.skills-sectionfinal3 .image-container {
+  position: absolute;
+  padding-left: 40px;
+  left: 664px;
+  top: 115px;
+  bottom: 0;
+  padding-right: 0;
+}
+
+.skills-sectionfinal3 .image-container img {
+  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: 100%; /* Ensure the image fills the entire height of the container */
+}
+
+.skills-sectionfinal4 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #1c4235; /* Set the height to 100% of the viewport height */
+}
+
+.skills-sectionfinal4 .content {
+  flex: 1;
+
+  padding-right: 20px;
+  padding-left: 40px; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal4 .content h2 {
+  color: white;
+  width: 890px;
+  height: 210px;
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 75px;
+  text-transform: uppercase; /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal4 .content h3 {
+  color: white;
+  /* Optional: Add some space between content and image */
+}
+
+.skills-sectionfinal4 .impact-stats {
+  display: grid; /* Change to grid layout */
+  grid-template-columns: repeat(2, 182px); /* Three columns with fixed width */
+  grid-template-rows: 94px; /* Set the height of the grid */
+  width: 549px; /* Set the width of the grid */
+  height: 84px; /* Set the height of the grid */
+}
+
+.skills-sectionfinal4 .impact-stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.skills-sectionfinal4 .impact-stats div span.number {
+  color: #f9a129; /* Set color of numbers */
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 358px;
+}
+
+.skills-sectionfinal4 .program-overview {
+  margin-top: 20px; /* Optional: Add some space between impact stats and program overview */
+}
+
+.skills-sectionfinal4 .program-overview p {
+  width: 748px;
+  height: 329px;
+  color: rgba(255, 255, 255, 0.75);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.skills-sectionfinal4 .read-more {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+}
+
+.skills-sectionfinal4 .read-more::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #f9a129;
+  position: absolute;
+  bottom: -2px;
+}
+
+.skills-sectionfinal4 .image-container {
+  position: absolute;
+  padding-left: 40px;
+  left: 818px;
+  /* top: 216px; */
+  bottom: 0;
+  padding-right: 0;
+}
+
+.skills-sectionfinal4 .image-container img {
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  height: 100%; /* Ensure the image fills the entire height of the container */
+}
+
+.image-sectionMemoir {
+  height: 100vh; /* Adjust as needed */
+}
+
+.image-sectionMemoir1 {
+  height: 100vh; /* Adjust as needed */
+  background-color: #1c4235;
+}
+.image-sectionMemoir .container {
+  width: 70%;
+  height: 900px; /* Adjust the maximum width of the image container */
+  /* Center the image container */
+}
+.image-sectionMemoir1 .container {
+  width: 70%;
+  height: 900px; /* Adjust the maximum width of the image container */
+  /* Center the image container */
+}
+
+.image-sectionMemoir img {
+  padding-top: 70px;
+  padding-left: 50px;
+  display: block;
+  width: 1100px;
+  height: auto;
+}
+.image-sectionMemoir1 img {
+  padding-top: 80px;
+  padding-left: 50px;
+  display: block;
+  width: 1550px;
+  height: auto;
 }
 
 .partners-section {
-  height: 90vh; /* Full window height */
+  height: 100vh; /* Full window height */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertically centers the content */
@@ -656,12 +1120,19 @@ a {
   background-color: #1c4235;
   color: white;
   padding: 20px;
-  height: 70vh;
+  height: 100vh;
 }
 
 /* Styles for the content within main-section */
 .main-section .content {
   padding-left: 40px;
+}
+
+.main-section .content h2 {
+  padding-left: 40px;
+  font-size: 56px;
+  width: 932px;
+  height: 133px;
 }
 
 /* Styles for the headings within main-section */
@@ -677,6 +1148,7 @@ a {
   padding: 20px;
   padding-left: 40px;
   color: rgba(255, 255, 255, 0.65);
+  font-size: 22px;
 }
 
 /* Styles for the row within main-section */
@@ -694,8 +1166,14 @@ a {
 }
 
 /* Styles for the sub-heading within main-section */
-.main-section .sub-heading {
+.main-section .column .sub-heading h2 {
   margin-bottom: 10px;
+  font-size: 22px;
+}
+.main-section .column .sub-heading1 {
+  margin-bottom: 10px;
+  font-size: 56px;
+  width: 932px;
 }
 
 /* Styles for the sub-text within main-section */
