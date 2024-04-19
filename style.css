@@ -279,6 +279,30 @@ a {
   background: white; /* Set the background color for the entire section */
 }
 
+.impact-overviewDirector {
+  max-width: 100vw;
+  height: 90vh; /* Ensure the container is as wide as the viewport */
+  padding: 50px 15px; /* Keep your existing padding */
+  text-align: left; /* Keep text aligned to the left */
+  font-family: "Exo 2", sans-serif;
+  background: white; /* Set the background color for the entire section */
+}
+
+.impact-overviewDirector h1 {
+  padding-left: 75px;
+  margin-bottom: -20px;
+}
+
+.impact-overviewDirector .impact-image {
+  max-width: 100%; /* Make image width responsive */
+  height: 90vh; /* Maintain aspect ratio */
+  display: block; /* Block-level for image */
+  margin: 0 auto; /* Center the image */
+  padding: 50px; /* Uniform padding */
+  box-sizing: border-box;
+  background-color: #fff; /* Include padding in the width and height */
+}
+
 .impact-overview .impact-image {
   max-width: 100%; /* Make image width responsive */
   height: 100vh; /* Maintain aspect ratio */
@@ -349,7 +373,7 @@ a {
 
 .impact-overviewArt3 {
   max-width: 100vw;
-  height: 100vh; /* Ensure the container is as wide as the viewport */
+  height: 110vh; /* Ensure the container is as wide as the viewport */
   padding: 50px 15px; /* Keep your existing padding */
   text-align: left; /* Keep text aligned to the left */
   font-family: "Exo 2", sans-serif;

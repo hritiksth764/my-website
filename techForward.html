@@ -108,11 +108,19 @@
           "*"
         );
       }
-
-      // Pause the video when the page is loaded
       window.addEventListener("load", function () {
         pauseVideo();
       });
+
+      var currentPage = window.location.pathname;
+
+      // Check if the current page is index.html
+      if (currentPage !== "/index.html") {
+        // Hide the logo by setting its display property to none
+        document.querySelector(".logo").style.visibility = "hidden";
+      }
+
+      // Pause the video when the page is loaded
     </script>
   </body>
 </html>

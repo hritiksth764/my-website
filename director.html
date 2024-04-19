@@ -47,7 +47,7 @@
         <a href="#"><span class="menu-number">08</span> About us</a>
       </div>
     </div>
-    <section class="impact-overview section1">
+    <section class="impact-overviewDirector">
       <h1>MESSAGE FROM DIRECTOR</h1>
       <img
         src="images/MessageFromDirector.png"
@@ -75,6 +75,13 @@
             behavior: "smooth",
           });
         }
+      }
+      var currentPage = window.location.pathname;
+
+      // Check if the current page is index.html
+      if (currentPage !== "/index.html") {
+        // Hide the logo by setting its display property to none
+        document.querySelector(".logo").style.visibility = "hidden";
       }
     </script>
   </body>
