@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annual Impact Overview</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="images/logoNew.png"
+        alt="Company Logo"
+        class="logo"
+        onclick="handleLogoClick()"
+      />
+      <div class="hamburger-icon" onclick="toggleNav()">☰</div>
+    </header>
+
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="#"
+          ><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a
+        >
+        <a href="#"><span class="menu-number">02</span> TECH HER FORWARD</a>
+        <a href="#"
+          ><span class="menu-number">03</span> STORYTELLING SATURDAY<br
+        /></a>
+        <a href="#"
+          ><span class="menu-number">04</span> SATURDAY ART CLASS<br
+        /></a>
+        <a href="#"><span class="menu-number">05</span> RURAL YOUTH SKILLING</a>
+        <a href="#"
+          ><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a
+        >
+        <a href="#"
+          ><span class="menu-number">07</span> 2023: Milestones & Memoirs</a
+        >
+        <a href="#"><span class="menu-number">08</span> About us</a>
+      </div>
+    </div>
+    <section class="impact-overviewtech">
+      <!-- <h1>SATURDAY ART CLASS</h1> -->
+      <img
+        src="images/techherforward.png"
+        alt="Descriptive text for the image"
+        class="impact-imageArt"
+      />
+    </section>
+
+    <section class="testimonial-section">
+      <div class="testimonial-content">
+        <h2>Testimonial</h2>
+        <p>
+          “The sessions are very interesting and filled with knowledge. Most of
+          the girls in my school don't have basic computer knowledge or English
+          language skills. This program helps them to go forward and get jobs in
+          future.”
+        </p>
+      </div>
+      <div class="video-container">
+        <!-- Your video goes here -->
+        <iframe
+          id="videoFrame"
+          width="900"
+          height="506"
+          src="videos/Soujanya AIR.mp4"
+          frameborder="0"
+          allow=""
+          allowfullscreen
+          autoplay="false"
+        ></iframe>
+      </div>
+    </section>
+
+    <script>
+      function toggleNav() {
+        var overlay = document.getElementById("myNav");
+        if (overlay.style.transform === "translateX(0%)") {
+          overlay.style.transform = "translateX(100%)";
+        } else {
+          overlay.style.transform = "translateX(0%)";
+        }
+      }
+      function handleLogoClick() {
+        if (window.location.pathname !== "/index.html") {
+          window.location.href = "/index.html";
+        } else {
+          // Smooth scroll to the top of the page
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      }
+      function pauseVideo() {
+        var video = document.getElementById("videoFrame");
+        video.contentWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        );
+      }
+
+      // Pause the video when the page is loaded
+      window.addEventListener("load", function () {
+        pauseVideo();
+      });
+    </script>
+  </body>
+</html>
