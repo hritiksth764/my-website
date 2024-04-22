@@ -13,6 +13,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+      /* Additional CSS styles */
+      /* Ensure that animated elements start with opacity: 0 */
+      [data-aos] {
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -35,7 +43,7 @@
     </div>
 
     <main class="main-content">
-      <section class="title-section">
+      <section class="title-section" data-aos="fade-down">
         <h1 class="title">Annual<br />Impact<br />Overview</h1>
         <h2 class="second-title">2023-24</h2>
         <img
@@ -160,7 +168,7 @@
         </div>
       </section> -->
       
-      <section class="leadership-section">
+      <section class="leadership-section" data-aos="fade-down">
         <div class="content-column">
           <div class="content">
             <h2>Message from Leadership</h2>
@@ -187,7 +195,7 @@
           <img src="images/msg.png" alt="Leadership Image">
         </div>
       </section>
-    <section id="impact-overview-section" class="impact-overviewNew">
+    <section id="impact-overview-section" class="impact-overviewNew" data-aos="fade-down">
       <h1>IMPACT OVERVIEW 2023-24</h1>
       <img
         src="images/Impact Overview 2023-24.png"
@@ -195,21 +203,21 @@
         class="impact-imageArt6"
       />
     </section>
-    <section class="impact-overviewNew2">
+    <section class="impact-overviewNew2" data-aos="fade-down">
       <img
         src="images/MAP_Geographies.png"
         alt="Descriptive text for the image"
         class="impact-imageArt6"
       />
     </section>
-    <section class="impact-overviewNew3">
+    <section class="impact-overviewNew3" data-aos="fade-down">
       <img
         src="images/Theory of change.png"
         alt="Descriptive text for the image"
         class="impact-imageArt6"
       />
     </section>
-      <section id="TechHerForward"class="skills-sectionfinal">
+      <section id="TechHerForward"class="skills-sectionfinal" data-aos="fade-down">
         <div class="content">
           <h2>TECH HER FORWARD</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -243,7 +251,7 @@
         </div>
       </section>
 
-      <section id="StorytellingSaturday" class="skills-sectionfinal1">
+      <section id="StorytellingSaturday" class="skills-sectionfinal1" data-aos="fade-down">
         <div class="content">
           <h2>Storytelling saturday</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -273,7 +281,7 @@
           <img src="images/finalStory.png" alt="Girls in a computer lab" />
         </div>
       </section>
-      <section id="ArtClass" class="skills-sectionfinal2">
+      <section id="ArtClass" class="skills-sectionfinal2" data-aos="fade-down">
         <div class="content">
           <h2>Saturday art class</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -303,7 +311,7 @@
           <img src="images/finalVisual.png" alt="Girls in a computer lab" />
         </div>
       </section>
-      <section id="RuralYouth" class="skills-sectionfinal3">
+      <section id="RuralYouth" class="skills-sectionfinal3" data-aos="fade-down">
         <div class="content">
           <h2>RURAL YOUTH SKILLING</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -340,7 +348,7 @@
         </div>
       </section>
 
-      <section id="WomenTech" class="skills-sectionfinal4">
+      <section id="WomenTech" class="skills-sectionfinal4" data-aos="fade-down">
         <div class="content">
           <h2>ALL WOMEN TECH CENTRES</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -376,7 +384,7 @@
         </div>
       </section>
 
-      <section id="MilestoneAndMemoir" class="image-sectionMemoir">
+      <section id="MilestoneAndMemoir" class="image-sectionMemoir" data-aos="fade-down">
         <div class="container">
           <img src="images/memoirFinal.png" alt="Description of the image">
         </div>
@@ -384,7 +392,7 @@
 
 
 
-      <section class="main-section">
+      <section class="main-section" data-aos="fade-down">
         <div class="content">
           <h2 class="heading">Help us <span style="color: #F9A129;">strengthen schools</span> in rural India with technology</h2>
           <p class="text">Join our mission to establish more digital labs in the times to come.</p>
@@ -481,6 +489,16 @@
   window.addEventListener("load", function() {
     pauseVideo();
   });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init(
+        {
+          duration:1200
+        }
+      );
+  
     </script>
   </body>
 </html>
