@@ -22,22 +22,15 @@
 
     <div id="myNav" class="overlay">
       <div class="overlay-content">
-        <a href="#"><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a>
-        <a href="#"
-          ><span class="menu-number">02</span> TECH HER FORWARD</a
-        >
-        <a href="#"
-          ><span class="menu-number">03</span> STORYTELLING SATURDAY<br /></a
-        >
-        <a href="#"
-          ><span class="menu-number">04</span> SATURDAY ART CLASS<br /></a
-        >
-        <a href="#"
-          ><span class="menu-number">05</span> RURAL YOUTH SKILLING</a
-        >
-        <a href="#"><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a>
-        <a href="#"><span class="menu-number">07</span> 2023: Milestones & Memoirs</a>
-        <a href="#"><span class="menu-number">08</span> About us</a>
+        <a href="index.html#impact-overview-section" onclick="toggleNav()"><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a>
+        <a href="index.html#TechHerForward" onclick="toggleNav()"><span class="menu-number">02</span> TECH HER FORWARD</a>
+        <a href="index.html#StorytellingSaturday" onclick="toggleNav()"><span class="menu-number">03</span> STORYTELLING SATURDAY</a>
+        
+        <a href="index.html#ArtClass" onclick="toggleNav()"><span class="menu-number">04</span> SATURDAY ART CLASS<br /></a>
+        <a href="index.html#RuralYouth" onclick="toggleNav()"><span class="menu-number">05</span> RURAL YOUTH SKILLING</a>
+        <a href="index.html#WomenTech" onclick="toggleNav()"><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a>
+        <a href="index.html#MilestoneAndMemoir" onclick="toggleNav()"><span class="menu-number">07</span> 2023: Milestones & Memoirs</a>
+        <a href="http://www.indivillagefoundation.org/about-us/" target="_blank" onclick="toggleNav()"><span class="menu-number">08</span> About us</a>
       </div>
     </div>
 
@@ -181,10 +174,12 @@
             </div>
             <div class="paragraph">
               <h3>HEAD OF OPERATIONS</h3>
-              <p>I am deeply honoured to present our annual impact report, reflecting on the year 2023 to 2024. This year 
-                has been a testament to our unwavering commitment, remarkable growth, formidable challenges and inspiring achievements, propelling IndiVillage Foundation to 
-                new heights.</p>
-              <a href="#" class="read-more">Read More</a>
+              <p>This year at IndiVillage Foundation has been marked 
+                by remarkable growth, and a significant portion of 
+                that success can be attributed to our incredible team, 
+                <br>volunteers and partners.</p>
+
+              <a href="hod.html" class="read-more" onclick="handleReadMoreClick()">Read More</a>
             </div>
           </div>
         </div>
@@ -192,11 +187,7 @@
           <img src="images/msg.png" alt="Leadership Image">
         </div>
       </section>
-      
-
-
-
-    <section class="impact-overviewNew">
+    <section id="impact-overview-section" class="impact-overviewNew">
       <h1>IMPACT OVERVIEW 2023-24</h1>
       <img
         src="images/Impact Overview 2023-24.png"
@@ -211,20 +202,14 @@
         class="impact-imageArt6"
       />
     </section>
-
-
-
-    <!-- <section class="impact-overview section1">
-      <h1>MESSAGE FROM DIRECTOR</h1>
+    <section class="impact-overviewNew3">
       <img
-        src="MessageFromDirector.png"
+        src="images/Theory of change.png"
         alt="Descriptive text for the image"
-        class="impact-image"
+        class="impact-imageArt6"
       />
-    </section> -->
-
-
-      <section class="skills-sectionfinal">
+    </section>
+      <section id="TechHerForward"class="skills-sectionfinal">
         <div class="content">
           <h2>TECH HER FORWARD</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -258,7 +243,7 @@
         </div>
       </section>
 
-      <section class="skills-sectionfinal1">
+      <section id="StorytellingSaturday" class="skills-sectionfinal1">
         <div class="content">
           <h2>Storytelling saturday</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -288,7 +273,7 @@
           <img src="images/finalStory.png" alt="Girls in a computer lab" />
         </div>
       </section>
-      <section class="skills-sectionfinal2">
+      <section id="ArtClass" class="skills-sectionfinal2">
         <div class="content">
           <h2>Saturday art class</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -318,9 +303,7 @@
           <img src="images/finalVisual.png" alt="Girls in a computer lab" />
         </div>
       </section>
-
-
-      <section class="skills-sectionfinal3">
+      <section id="RuralYouth" class="skills-sectionfinal3">
         <div class="content">
           <h2>RURAL YOUTH SKILLING</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -357,7 +340,7 @@
         </div>
       </section>
 
-      <section class="skills-sectionfinal4">
+      <section id="WomenTech" class="skills-sectionfinal4">
         <div class="content">
           <h2>ALL WOMEN TECH CENTRES</h2>
           <h3>IMPACT BY NUMBERS</h3>
@@ -393,28 +376,19 @@
         </div>
       </section>
 
-      <section class="image-sectionMemoir">
+      <section id="MilestoneAndMemoir" class="image-sectionMemoir">
         <div class="container">
           <img src="images/memoirFinal.png" alt="Description of the image">
         </div>
       </section>
 
-      <!-- <section class="image-sectionMemoir1">
-        <div class="container">
-          <img src="images/partnersLatest.png" alt="Description of the image">
-        </div>
-      </section> -->
 
-      <!-- <section class="image-sectionMemoir">
-        <div class="container">
-          <img src="images/finalTeam.png" alt="Description of the image">
-        </div>
-      </section> -->
+
       <section class="main-section">
         <div class="content">
-          <h2 class="heading">Help us strengthen schools in rural India with technology</h2>
+          <h2 class="heading">Help us <span style="color: #F9A129;">strengthen schools</span> in rural India with technology</h2>
           <p class="text">Join our mission to establish more digital labs in the times to come.</p>
-          <h2 class="heading">Help us set up libraries in schools in rural India</h2>
+          <h2 class="heading">Help us <span style="color: #F9A129;"> set up libraries </span>in schools in rural India</h2>
           <p class="text">Join us in spreading the joy of reading with a vision to impact early readers in rural India.</p>
         </div>
       
@@ -487,6 +461,9 @@
     window.location.href = "director.html";
   }
 
+  function handleReadMoreClick() {
+    window.location.href = "hod.html";
+  }
   function handleReadMoreClick() {
     window.location.href = "storytelling.html";
   }

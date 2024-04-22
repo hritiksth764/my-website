@@ -206,6 +206,11 @@ a {
   white-space: nowrap;
   text-decoration: none; /* Prevent text from wrapping */
 }
+
+.overlay-content a:hover {
+  color: #faa22a;
+}
+
 .overlay-content a span.menu-number {
   margin-right: 20px; /* Increase the right margin to create a gap */
   display: inline-block; /* Treat the span as a block-level element inline */
@@ -288,6 +293,15 @@ a {
   background: white; /* Set the background color for the entire section */
 }
 
+.impact-overviewHead {
+  max-width: 100vw;
+  height: 90vh; /* Ensure the container is as wide as the viewport */
+  padding: 50px 15px; /* Keep your existing padding */
+  text-align: left; /* Keep text aligned to the left */
+  font-family: "Exo 2", sans-serif;
+  background: white; /* Set the background color for the entire section */
+}
+
 .impact-overviewDirector h1 {
   padding-left: 75px;
   margin-bottom: -20px;
@@ -298,7 +312,17 @@ a {
   height: 90vh; /* Maintain aspect ratio */
   display: block; /* Block-level for image */
   margin: 0 auto; /* Center the image */
-  padding: 50px; /* Uniform padding */
+  padding: 50px 15px; /* Uniform padding */
+  box-sizing: border-box;
+  margin-bottom: -20px;
+  background-color: #fff; /* Include padding in the width and height */
+}
+.impact-overviewHead .impact-image {
+  max-width: 100%; /* Make image width responsive */
+  height: 100%; /* Maintain aspect ratio */
+  display: block; /* Block-level for image */
+  margin: 0 auto; /* Center the image */
+  padding: 20px; /* Uniform padding */
   box-sizing: border-box;
   background-color: #fff; /* Include padding in the width and height */
 }
@@ -511,7 +535,7 @@ a {
 
 .impact-overviewNew2 {
   max-width: 100vw;
-  height: 100vh; /* Ensure the container is as wide as the viewport */
+  height: 90vh; /* Ensure the container is as wide as the viewport */
   /*  Keep your existing padding */
   padding: 0 50px;
   padding-top: 20px;
@@ -519,6 +543,31 @@ a {
   font-family: "Exo 2", sans-serif;
   background: white; /* Set the background color for the entire section */
 }
+
+.impact-overviewNew3 {
+  max-width: 100vw;
+  height: 150vh; /* Ensure the container is as wide as the viewport */
+  /*  Keep your existing padding */
+  padding: 0 50px;
+  padding-top: 0px;
+  text-align: left; /* Keep text aligned to the left */
+  font-family: "Exo 2", sans-serif;
+  background: white; /* Set the background color for the entire section */
+}
+
+.impact-overviewNew3 .impact-imageArt6 {
+  width: 75vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto;
+  /* Center the image */
+  /* Bottom padding */
+  box-sizing: border-box;
+  /* padding-top: 20px; */
+  margin-bottom: 100px;
+  /* Padding included in the element's dimensions */
+}
+
 .impact-overviewNew2 .impact-imageArt6 {
   width: 75vw; /* Responsive width */
   height: auto; /* Maintain aspect ratio */
@@ -734,7 +783,7 @@ a {
 .skills-sectionfinal1 .content h2 {
   color: black;
   width: 948px;
-  height: 210px;
+  height: 110px;
   font-family: "Exo 2";
   font-size: 56px;
   font-style: normal;
@@ -842,7 +891,7 @@ a {
 .skills-sectionfinal2 .content h2 {
   color: white;
   width: 890px;
-  height: 210px;
+  height: 110px;
   font-family: "Exo 2";
   font-size: 56px;
   font-style: normal;
@@ -1059,7 +1108,7 @@ a {
 .skills-sectionfinal4 .content h2 {
   color: white;
   width: 890px;
-  height: 210px;
+  height: 110px;
   font-family: "Exo 2";
   font-size: 56px;
   font-style: normal;
@@ -1428,6 +1477,7 @@ a {
 }
 
 .leadership-section .content-column {
+  max-width: 60%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1445,8 +1495,9 @@ a {
 
 .leadership-section .content h2 {
   font-family: "Exo 2", sans-serif;
+  width: 800px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 46px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -1498,6 +1549,7 @@ a {
   flex: 1;
   text-align: right;
   padding-right: 60px;
+  padding-top: 50px;
 }
 
 .leadership-section .image-column img {
@@ -1505,6 +1557,15 @@ a {
   height: 648px;
   object-fit: cover;
 }
+
+/* .leadership-section .fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.leadership-section .fade-in.show {
+  opacity: 1;
+} */
 
 /* Responsive styling, if needed */
 @media (max-width: 768px) {
